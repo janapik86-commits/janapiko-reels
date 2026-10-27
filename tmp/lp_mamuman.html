@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>הממומן הראשון שלי · 7 ימים לקמפיין הראשון</title>
+<meta name="description" content="תוכנית דיגיטלית מעשית של 7 ימים: מכינים מודעה ומקימים קמפיין ראשון לוואטסאפ, עם הדרכה טכנית של קמפיינר מנוסה וכלים להתקדם גם כשהחשש קיים.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=Frank+Ruhl+Libre:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#120E0A; --ink2:#2B2118; --cream:#FBF6EC; --cream2:#F1E6CF;
+  --gold:#C9A14A; --gold-l:#F3DCA0; --gold-d:#9C7424; --muted:#6B5B4A;
+  --line:rgba(201,161,74,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Heebo',Arial,sans-serif;background:var(--cream);color:var(--ink);direction:rtl;font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.narrow{max-width:760px;margin:0 auto}
+h1,h2,h3{line-height:1.2}
+h2{font-family:'Frank Ruhl Libre',serif;font-weight:900;font-size:clamp(30px,4.6vw,44px);margin-bottom:22px}
+.kicker{display:inline-block;font-weight:800;font-size:14px;letter-spacing:.06em;color:var(--gold-d);margin-bottom:10px}
+section{padding:76px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:16px 34px;border-radius:10px;
+  background:var(--gold);color:var(--ink);font-weight:900;font-size:19px;text-decoration:none;border:0;cursor:pointer;
+  box-shadow:0 10px 28px rgba(201,161,74,.35);transition:transform .15s ease, background .15s ease}
+.btn:hover{transform:translateY(-2px);background:#d6b05a}
+.btn .arr{font-size:22px;line-height:1}
+.fine{font-size:14px;color:var(--muted);margin-top:12px}
+
+/* HERO */
+.hero{background:radial-gradient(1200px 600px at 85% -10%, #3a2c1f 0%, var(--ink) 55%);color:var(--cream);padding:34px 0 0;overflow:hidden}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:40px}
+.host{display:flex;align-items:center;gap:12px}
+.host img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
+.host b{display:block;font-weight:800;font-size:16px}
+.host span{font-size:13px;color:var(--gold-l);opacity:.85}
+.pill{border:1px solid var(--line);color:var(--gold-l);font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px;white-space:nowrap}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:44px;align-items:center;padding-bottom:56px}
+.hero-grid .track{margin-bottom:0}
+.hero h1{font-family:'Frank Ruhl Libre',serif;font-weight:900;font-size:clamp(42px,7vw,76px);letter-spacing:-.01em}
+.hero h1 .g{background:linear-gradient(180deg,#F3DCA0 0%,#C9A14A 55%,#9C7424 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{font-family:'Frank Ruhl Libre',serif;font-weight:700;font-size:clamp(22px,2.8vw,28px);color:var(--gold-l);margin:14px 0 22px}
+.hero p.lead{font-size:19px;color:#E9DFCB;max-width:620px}
+.hero p.lead+p.lead{margin-top:12px}
+.hero .cta-row{margin:30px 0 8px;display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+.price-tag{display:flex;flex-direction:column;line-height:1.15}
+.price-tag small{font-size:13px;color:var(--gold-l);font-weight:700}
+.price-tag strong{font-size:34px;font-weight:900;color:var(--cream)}
+.hero .fine{color:#BBAA8E}
+/* 7-day track: recurring motif */
+.track{background:rgba(251,246,236,.04);border:1px solid var(--line);border-radius:16px;padding:22px 20px;margin-bottom:56px}
+.track h4{font-size:14px;font-weight:800;color:var(--gold-l);margin-bottom:14px}
+.track ol{list-style:none;display:grid;gap:9px;counter-reset:d}
+.track li{display:flex;align-items:center;gap:12px;font-size:15px;color:#E9DFCB}
+.track li i{flex:0 0 30px;height:30px;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center;font-style:normal;font-weight:900;font-size:14px;color:var(--gold-l)}
+.track li:last-child i{background:var(--gold);color:var(--ink)}
+.track li:last-child{color:var(--cream);font-weight:800}
+.hero-foot{height:28px;background:var(--cream);border-radius:28px 28px 0 0}
+
+/* VOICES */
+.voices{padding-top:48px}
+.voice-list{display:grid;gap:12px;margin:26px 0 30px}
+.voice{background:#fff;border:1px solid var(--cream2);border-right:4px solid var(--gold);border-radius:10px;padding:16px 20px;font-family:'Frank Ruhl Libre',serif;font-weight:700;font-size:21px}
+.punch{font-size:20px}
+.punch strong{display:block;font-size:24px;font-weight:900;margin-top:6px}
+
+/* OUTCOMES */
+.dark{background:var(--ink);color:var(--cream)}
+.dark h2{color:var(--cream)}
+.dark .kicker{color:var(--gold)}
+.checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;margin:10px 0 28px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-size:18px;color:#E9DFCB}
+.checks li::before{content:"✓";flex:0 0 28px;height:28px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-weight:900;font-size:15px;margin-top:2px}
+.result{border:1px solid var(--line);border-radius:14px;padding:20px 22px;color:var(--gold-l);font-size:18px}
+
+/* WHY */
+.why-q{font-family:'Frank Ruhl Libre',serif;font-weight:900;font-size:clamp(34px,5vw,52px);color:var(--gold-d);margin:18px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0}
+.card{background:#fff;border:1px solid var(--cream2);border-radius:14px;padding:26px 24px}
+.card .tag{display:inline-block;font-size:13px;font-weight:800;color:var(--gold-d);border:1px solid var(--gold);border-radius:999px;padding:3px 12px;margin-bottom:10px}
+.card h3{font-size:22px;font-weight:900;margin-bottom:8px}
+.statement{text-align:center;font-family:'Frank Ruhl Libre',serif;font-weight:900;font-size:clamp(24px,3.4vw,32px);padding:10px 0 0}
+
+/* DAYS */
+.days{background:var(--cream2)}
+.day-list{display:grid;gap:14px;margin-top:10px;position:relative}
+.day{display:grid;grid-template-columns:86px 1fr;gap:18px;background:var(--cream);border-radius:14px;padding:20px 22px;align-items:start}
+.day .n{font-family:'Frank Ruhl Libre',serif;font-weight:900;font-size:44px;line-height:1;color:var(--gold-d);text-align:center}
+.day .n small{display:block;font-family:'Heebo';font-size:13px;font-weight:800;color:var(--muted);letter-spacing:.04em}
+.day h3{font-size:21px;font-weight:900;margin-bottom:4px}
+.day p{color:var(--muted);font-size:17px}
+.day.last{background:var(--ink);color:var(--cream)}
+.day.last p{color:#E9DFCB}
+.day.last .n{color:var(--gold-l)}
+.note{font-size:15px;color:var(--muted);margin-top:18px}
+
+/* INCLUDED */
+.inc{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.inc li{background:#fff;border:1px solid var(--cream2);border-radius:10px;padding:14px 18px;font-weight:700;display:flex;gap:12px;align-items:center}
+.inc li::before{content:"";flex:0 0 10px;height:10px;background:var(--gold);transform:rotate(45deg)}
+
+/* FIT */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fit .card.yes{border-top:4px solid var(--gold)}
+.fit .card.no{border-top:4px solid var(--muted);background:#FFFDF8}
+
+/* FAQ */
+.faq details{border-bottom:1px solid var(--cream2);padding:18px 0}
+.faq summary{font-weight:800;font-size:19px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold-d);font-size:26px;line-height:1;font-weight:400}
+.faq details[open] summary::after{content:"−"}
+.faq details p{color:var(--muted);margin-top:10px}
+
+/* FINAL */
+.final{background:radial-gradient(900px 500px at 15% 0%, #3a2c1f 0%, var(--ink) 60%);color:var(--cream);text-align:center}
+.final h2{color:var(--cream)}
+.final p{color:#E9DFCB;font-size:19px}
+.final .price-tag{align-items:center;margin:26px 0 18px}
+.final .fine{color:#BBAA8E;max-width:620px;margin:16px auto 0}
+footer{background:var(--ink);color:#8F7F67;text-align:center;font-size:13px;padding:22px 20px 96px;border-top:1px solid #2B2118}
+
+/* sticky mobile CTA */
+.sticky{position:fixed;inset:auto 0 0 0;background:rgba(18,14,10,.96);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:none;align-items:center;gap:12px;z-index:50;border-top:1px solid var(--line)}
+.sticky .btn{flex:1;min-height:52px;font-size:17px;padding:12px 16px;box-shadow:none}
+.sticky .p{color:var(--cream);font-weight:900;font-size:20px;white-space:nowrap}
+
+@media (max-width:820px){
+  body{font-size:17px}
+  section{padding:56px 0}
+  .hero-grid,.two,.fit,.checks,.inc{grid-template-columns:1fr}
+  .hero-grid{padding-bottom:40px;gap:30px}
+  .hero p.lead{font-size:17px}
+  .pill{display:none}
+  .btn{width:100%}
+  .hero .cta-row{flex-direction:column;align-items:stretch}
+  .price-tag{align-items:center}
+  .day{grid-template-columns:60px 1fr;padding:18px}
+  .day .n{font-size:36px}
+  .sticky{display:flex}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="host">
+        <img src="data:image/jpeg;base64,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" alt="ז'אנה פיקובסקי">
+        <div><b>ז'אנה פיקובסקי</b><span>מנטורית עסקית</span></div>
+      </div>
+      <span class="pill">תוכנית דיגיטלית · 7 ימים</span>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1>הממומן הראשון שלי<br><span class="g">ב־7 ימים</span></h1>
+        <p class="sub">הגיע הזמן להעלות את הקמפיין הראשון שלך. בעצמך.</p>
+        <p class="lead">רוצה להתחיל לפרסם את העסק בפייסבוק ובאינסטגרם, אבל בכל פעם משהו עוצר אותך?</p>
+        <p class="lead">אולי הטכנולוגיה נראית מסובכת. אולי את או אתה חוששים להוציא כסף בלי לדעת מה יקרה. ואולי כבר פתחתם את מנהל המודעות, וסגרתם אותו אחרי כמה דקות.</p>
+        <p class="lead"><b style="color:var(--cream)">בדיוק בשביל זה יצרנו את ״הממומן הראשון שלי״.</b> תוכנית דיגיטלית מעשית של 7 ימים, שבה תלמדו להכין מודעה ולהקים קמפיין ראשון שמוביל לשיחה בוואטסאפ, עם הדרכה טכנית של קמפיינר מנוסה וכלים תודעתיים שיעזרו לכם להתקדם גם כשהחשש עדיין קיים.</p>
+        <div class="cta-row">
+          <a class="btn js-buy" href="#buy">אני רוצה להקים את הקמפיין הראשון שלי <span class="arr">←</span></a>
+          <div class="price-tag"><small>מחיר השקה</small><strong>397 ₪</strong></div>
+        </div>
+        <p class="fine">תקציב הפרסום למטא אינו כלול במחיר הקורס.</p>
+      </div>
+      <aside class="track" aria-label="מסלול 7 הימים">
+        <h4>המסלול שלכם</h4>
+        <ol>
+          <li><i>1</i>מפסיקים לדחות ומתחילים</li>
+          <li><i>2</i>בוחרים מה לפרסם</li>
+          <li><i>3</i>מכינים את המודעה</li>
+          <li><i>4</i>מחליטים כמה נכון להשקיע</li>
+          <li><i>5</i>מכינים את המערכת</li>
+          <li><i>6</i>מקימים את הקמפיין</li>
+          <li><i>7</i>בודקים ועולים לאוויר</li>
+        </ol>
+      </aside>
+    </div>
+  </div>
+  <div class="hero-foot"></div>
+</header>
+
+<section class="voices">
+  <div class="wrap narrow">
+    <span class="kicker">נשמע לכם מוכר?</span>
+    <h2>המשפטים שעוצרים את הקמפיין הראשון</h2>
+    <div class="voice-list">
+      <div class="voice">״אני לא מבין/ה כלום בפרסום ממומן.״</div>
+      <div class="voice">״אני מפחד/ת ללחוץ על משהו לא נכון ולבזבז כסף.״</div>
+      <div class="voice">״אני לא יודע/ת מה לכתוב במודעה.״</div>
+      <div class="voice">״מה אם אפרסם ואף אחד לא יפנה?״</div>
+      <div class="voice">״אולי עדיף לחכות עד שאבין בזה יותר.״</div>
+    </div>
+    <p class="punch">אם הזדהיתם, אתם לא צריכים ללמוד עכשיו את כל עולם הפרסום הדיגיטלי.
+      <strong>אתם צריכים מסלול אחד ברור לקמפיין הראשון שלכם.</strong></p>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap narrow">
+    <span class="kicker">מה תדעו לעשות בסיום?</span>
+    <h2>המטרה היא שתוכלו:</h2>
+    <ul class="checks">
+      <li>לבחור הצעה אחת שמתאימה לפרסום.</li>
+      <li>לכתוב ולהכין מודעה ראשונה.</li>
+      <li>לחבר את התשתיות הנדרשות לקמפיין לוואטסאפ.</li>
+      <li>לבחור תקרת תקציב שמתאימה לעסק שלכם.</li>
+      <li>להקים ולבדוק קמפיין ראשון בפייסבוק ובאינסטגרם.</li>
+      <li>להבין איך לעקוב אחרי ההוצאות ומתי לעצור.</li>
+    </ul>
+    <p class="result">בסיום התהליך יהיה לכם קמפיין שהוקם ונבדק, מוכן להפעלה או פעיל, בהתאם לתקינות החשבון ולאישורי מטא.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <span class="kicker">למה הקורס הזה שונה?</span>
+    <h2>כי לא תמיד חסר לכם מידע</h2>
+    <p>לפעמים מה שעוצר אתכם הוא דווקא המשפט שרץ בראש:</p>
+    <p class="why-q">״ומה אם אכשל?״</p>
+    <p>לכן שילבנו בקורס שתי התמחויות:</p>
+    <div class="two">
+      <div class="card">
+        <span class="tag">הצד המעשי</span>
+        <h3>קמפיינר מנוסה, על המסך</h3>
+        <p>מראה צעד אחר צעד איך להקים קמפיין ראשון לוואטסאפ.</p>
+      </div>
+      <div class="card">
+        <span class="tag">הצד התודעתי</span>
+        <h3>כלים להתקדם עם החשש</h3>
+        <p>להתמודד עם פחד מחשיפה, מהפסד כספי, מטכנולוגיה ומכישלון, כדי שתוכלו להתקדם גם בלי להרגיש מוכנים במאה אחוז.</p>
+      </div>
+    </div>
+    <p class="statement">לא צריך שהפחד ייעלם כדי להתחיל לפעול.</p>
+  </div>
+</section>
+
+<section class="days" id="days">
+  <div class="wrap narrow">
+    <span class="kicker">שבעה ימים, שבעה צעדים</span>
+    <h2>מה נעשה בכל אחד משבעת הימים?</h2>
+    <div class="day-list">
+      <div class="day"><div class="n"><small>יום</small>1</div><div><h3>מפסיקים לדחות ומתחילים</h3><p>מגדירים את מטרת הקמפיין, מזהים את החשש המרכזי ומכינים את מה שצריך.</p></div></div>
+      <div class="day"><div class="n"><small>יום</small>2</div><div><h3>בוחרים מה לפרסם</h3><p>בוחרים הצעה אחת ברורה וקהל יעד מתאים.</p></div></div>
+      <div class="day"><div class="n"><small>יום</small>3</div><div><h3>מכינים את המודעה</h3><p>כותבים מסר שמזמין לשיחה ומכינים תמונה או סרטון.</p></div></div>
+      <div class="day"><div class="n"><small>יום</small>4</div><div><h3>מחליטים כמה נכון להשקיע</h3><p>בוחרים תקרת תקציב אישית ולומדים איך לעקוב אחר ההוצאה.</p></div></div>
+      <div class="day"><div class="n"><small>יום</small>5</div><div><h3>מכינים את המערכת</h3><p>בודקים חשבון פרסום, הרשאות, אמצעי תשלום וחיבור לוואטסאפ.</p></div></div>
+      <div class="day"><div class="n"><small>יום</small>6</div><div><h3>מקימים את הקמפיין</h3><p>עובדים עם הקמפיינר שלב אחר שלב ומכינים את הקמפיין לבדיקה.</p></div></div>
+      <div class="day last"><div class="n"><small>יום</small>7</div><div><h3>בודקים ועולים לאוויר</h3><p>מבצעים בדיקות אחרונות, מפרסמים כשהכול תקין ולומדים מה לעקוב אחריו.</p></div></div>
+    </div>
+    <p class="note">שבעת הימים הם מסגרת למידה ויישום. עיכובים בהרשאות או באישורי מודעות עשויים להאריך את זמן העלייה לאוויר.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <span class="kicker">מה כלול בקורס?</span>
+    <h2>כל מה שצריך לקמפיין הראשון</h2>
+    <ul class="inc">
+      <li>הדרכות וידאו קצרות ומעשיות</li>
+      <li>הדגמות מסך של קמפיינר מנוסה</li>
+      <li>תרגולים תודעתיים ממוקדים</li>
+      <li>תבנית לכתיבת המודעה הראשונה</li>
+      <li>צ'קליסט להכנת חשבון הפרסום</li>
+      <li>דף לתכנון תקרת תקציב אישית</li>
+      <li>צ'קליסט לבדיקה לפני הפעלת הקמפיין</li>
+      <li>הנחיות בסיסיות למעקב ולזיהוי תקלות</li>
+    </ul>
+    <div style="text-align:center;margin-top:34px">
+      <a class="btn js-buy" href="#buy">אני רוצה להקים את הקמפיין הראשון שלי <span class="arr">←</span></a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="wrap narrow">
+    <span class="kicker">לפני שמחליטים</span>
+    <h2>למי הקורס מתאים?</h2>
+    <div class="fit">
+      <div class="card yes">
+        <h3>מתאים</h3>
+        <p>לבעלי ובעלות עסקים שיש להם מוצר או שירות קיים, ורוצים לנסות לפרסם אותו באמצעות קמפיין שמוביל לפניות בוואטסאפ. הקורס מתאים למתחילים שמוכנים לבצע את המשימות בעצמם.</p>
+      </div>
+      <div class="card no">
+        <h3>פחות מתאים</h3>
+        <p>למי שמחפש ניהול קמפיינים במיקור חוץ, הכשרה מלאה כמנהל קמפיינים, או הבטחה למספר מסוים של לידים ומכירות.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap narrow">
+    <span class="kicker">שאלות נפוצות</span>
+    <h2>מה שואלים אותנו</h2>
+    <details><summary>אין לי שום ניסיון בפרסום. אצליח לעקוב?</summary><p>הקורס נבנה למתחילים, עם הדגמות מסך וצ'קליסטים. ייתכנו הבדלים בממשק ובתשתיות בין חשבונות.</p></details>
+    <details><summary>אני חייב/ת להצטלם?</summary><p>לא בהכרח. אפשר להכין מודעה גם באמצעות תמונה או חומר חזותי אחר שמתאים לעסק ולכללי הפרסום.</p></details>
+    <details><summary>צריך אתר?</summary><p>לא בהכרח. המסלול בקורס מתמקד בקמפיין שמוביל לשיחה בוואטסאפ, בכפוף לדרישות ולהגדרות של מטא.</p></details>
+    <details><summary>כמה כסף אצטרך להשקיע בפרסום?</summary><p>אין סכום אחיד. בקורס תלמדו לבחור תקרת תקציב אישית. הוצאות הפרסום משולמות בנפרד למטא.</p></details>
+    <details><summary>האם הקמפיין יביא לי לקוחות?</summary><p>אין אפשרות להבטיח פניות, מכירות או החזר על ההשקעה. הקורס מלמד תהליך הקמה, הפעלה ובקרה בסיסית.</p></details>
+    <details><summary>ומה אם אני מפחד/ת להיכשל?</summary><p>בדיוק בשביל זה שילבנו כלים תודעתיים לאורך התוכנית. המטרה היא לא להעלים כל פחד, אלא ללמוד לפעול בצורה שקולה גם כשהוא קיים.</p></details>
+  </div>
+</section>
+
+<section class="final" id="buy">
+  <div class="wrap narrow">
+    <h2>הקמפיין הראשון שלכם יכול להתחיל כאן</h2>
+    <p>במקום להמשיך לדחות את הפרסום כי הכול מרגיש מסובך, אפשר להתקדם במסלול מסודר, צעד אחר צעד.</p>
+    <div class="price-tag"><small>מחיר השקה</small><strong>397 ₪</strong></div>
+    <a class="btn js-buy" href="#buy">כן, אני רוצה את הממומן הראשון שלי <span class="arr">←</span></a>
+    <p class="fine">הקורס אינו כולל תקציב פרסום, ניהול אישי של קמפיינים או הבטחה לתוצאות מסחריות. פרטי הגישה, התמיכה ותנאי הביטול יפורטו לפני הרכישה.</p>
+  </div>
+</section>
+
+<footer>© ז'אנה פיקובסקי · המרכז לחדשנות אישית ועסקית</footer>
+
+<div class="sticky">
+  <span class="p">397 ₪</span>
+  <a class="btn js-buy" href="#buy">להקים את הקמפיין הראשון</a>
+</div>
+
+<script>
+  // קישור לדף התשלום: להדביק כאן כשהוא מוכן. עד אז הכפתורים גוללים לאזור הרכישה.
+  var CHECKOUT_URL = "";
+  if (CHECKOUT_URL && CHECKOUT_URL.indexOf("http") === 0) {
+    document.querySelectorAll('.js-buy').forEach(function (a) { a.href = CHECKOUT_URL; });
+  }
+</script>
+</body>
+</html>
